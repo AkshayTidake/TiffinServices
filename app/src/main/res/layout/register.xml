@@ -1,113 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context="com.example.aksha.tiffinservices.Register">
+    tools:context="com.example.aksha.tiffinservices.RegisterTiffin">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <EditText
-            android:id="@+id/editText"
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tname">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText9"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+</android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tsname">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Service Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText11"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tmail">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="E-mail"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editText4"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tcountry">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Country"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText5"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tstate">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="State"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText6"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tcity">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="City"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText7"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tarea">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/area"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Area"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText12"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tnumber">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Contact Number"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tpcode">
 
-        <EditText
-            android:id="@+id/editText8"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/tpassword">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="pincode"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editText10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:hint="password"
-            android:inputType="textPassword" />
-
+            android:inputType="textPassword"
+            android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
         <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Submit" />
+            android:id="@+id/regbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/icon_shape"
+            android:text="Save"
+            android:textColor="#fff" />
+            <Button
+                android:id="@+id/delbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_shape"
+                android:text="Delete \nAccount"
+                android:textColor="#fff" />
+
     </LinearLayout>
 
 

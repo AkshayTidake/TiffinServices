@@ -1,54 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.aksha.tiffinservices.Main2Activity">
+    android:layout_height="wrap_content">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/foodback"
+    tools:context="com.example.aksha.tiffinservices.Main2Activity">
 
-    <TextView
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
-        android:text="Search tiffin services"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="25sp"
-        tools:fontFamily="cursive" />
-
-    <TextView
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="150dp"
-        android:text="register tiffin services"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="25sp"
-        tools:fontFamily="cursive" />
-</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiffincard"
+            android:clickable="true"
+            android:focusable="true"
+            android:fitsSystemWindows="true"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/colorSecondary">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
     <ImageView
-        android:id="@+id/searchbtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/regtiffbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/food"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register Tiffin\n Services"
+                        android:textColor="#fff"
+                        android:gravity="center" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hostelcard"
+            android:clickable="true"
+            android:focusable="true"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/colorSecondary">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/reghostbtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/hostel" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Hostel\n Services"
+                    android:textColor="#fff"
+                    android:gravity="center" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/search"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
-    <ImageView
-        android:id="@+id/regbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/smalllunchbox"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usercard"
+            android:clickable="true"
+            android:focusable="true"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/colorSecondary">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/regusrbtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/user" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register\nuser"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

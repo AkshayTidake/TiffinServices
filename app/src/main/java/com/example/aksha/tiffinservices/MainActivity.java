@@ -11,10 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
        new Handler().postDelayed(new Runnable() {
            @Override
            public void run() {
-               startActivity(new Intent(MainActivity.this,Main2Activity.class));
+               startActivity(new Intent(MainActivity.this,LoginScreen.class));
                finish();
            }
        },SPLASH_TIME_OUT);

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TiffinServices</string>
+    <string name="service_unavailable">service not available</string>
+    <string name="invalid_lat_long_used">invalid latitude and longitude</string>
+    <string name="no_address_found">address not found</string>
+    <string name="address_found">address found</string>
 </resources>
